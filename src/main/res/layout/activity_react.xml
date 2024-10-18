@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReactActivity"
+    android:orientation="vertical">
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/webView"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#cecece"
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        >
+
+        <!-- Home Icon -->
+        <ImageButton
+            android:id="@+id/btn_home"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@android:drawable/ic_media_previous"
+            android:contentDescription="Home"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="16dp"/>
+
+        <ImageButton
+            android:id="@+id/btn_reload"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="Home"
+            android:padding="16dp"
+            android:src="@android:drawable/ic_menu_rotate" />
+
+        <ImageButton
+            android:id="@+id/btn_upscroll"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="Home"
+            android:padding="16dp"
+            android:src="@android:drawable/arrow_up_float" />
+    </LinearLayout>
+</LinearLayout>
